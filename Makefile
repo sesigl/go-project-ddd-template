@@ -60,10 +60,6 @@ test-fast: ### run fast tests only
 	go test -v -cover ./internal/... ./pkg/...
 .PHONY: test-fast
 
-mock: ### run mockgen
-	mockgen -source ./internal/usecase/interfaces.go -package usecase_test > ./internal/usecase/mocks_test.go
-.PHONY: mock
-
 migrate-create:  ### create new migration
 	migrate create -ext sql -dir migrations 'migrate_name'
 .PHONY: migrate-create

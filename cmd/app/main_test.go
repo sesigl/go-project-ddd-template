@@ -5,7 +5,6 @@ import (
 	"github.com/evrone/go-clean-template/config"
 	"github.com/evrone/go-clean-template/internal"
 	"github.com/evrone/go-clean-template/internal/test/db"
-	"github.com/evrone/go-clean-template/pkg/httpserver"
 	"github.com/evrone/go-clean-template/pkg/logger"
 	"github.com/evrone/go-clean-template/pkg/rabbitmq/rmq_rpc/client"
 	"github.com/gin-gonic/gin"
@@ -20,13 +19,11 @@ import (
 var httpEngine *gin.Engine
 var cfg *config.Config
 
-func init() {
-	httpEngine, cfg = given()
-}
-
 func TestApp(t *testing.T) {
 
 	t.Run("When calling the health endpoint, Then return 200", func(t *testing.T) {
+		httpEngine, cfg = given()
+
 		w := sendRequest("GET", "/healthz", httpEngine, nil)
 
 		require.Equal(t, 200, w.Code)
@@ -127,11 +124,14 @@ func given() (*gin.Engine, *config.Config) {
 
 	db.ExecuteMigrate(cfg.PG.URL, log)
 
-	// RabbitMQ RPC server
-	internal.InitializeNewRmqRpcServerWithConfig(cfg)
-	_, httpEngine := httpserver.New(cfg)
+	repository := internal.InitializeTranslationRepository()
+	translator := internal.InitializeTranslationWebAPI()
 
-	return httpEngine, cfg
+	internal.InitializeNewRmqRpcServerForTesting(cfg, repository, translator)
+
+	httpServer := internal.InitializeNewHttpServer()
+
+	return httpServer.Router, cfg
 }
 
 func sendRequest(method string, url string, httpEngine *gin.Engine, body io.Reader) *httptest.ResponseRecorder {
