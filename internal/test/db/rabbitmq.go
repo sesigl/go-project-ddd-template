@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/docker/go-connections/nat"
-	"github.com/evrone/go-clean-template/config"
+	"github.com/sesigl/go-project-ddd-template/config"
 	"github.com/testcontainers/testcontainers-go"
 	"github.com/testcontainers/testcontainers-go/wait"
 	"time"

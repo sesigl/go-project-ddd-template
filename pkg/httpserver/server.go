@@ -3,8 +3,8 @@ package httpserver
 
 import (
 	"context"
-	"github.com/evrone/go-clean-template/config"
 	"github.com/gin-gonic/gin"
+	"github.com/sesigl/go-project-ddd-template/config"
 	"net"
 	"net/http"
 	"time"

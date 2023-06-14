@@ -3,13 +3,13 @@ package server
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/evrone/go-clean-template/config"
+	"github.com/sesigl/go-project-ddd-template/config"
 	"time"
 
 	"github.com/streadway/amqp"
 
-	"github.com/evrone/go-clean-template/pkg/logger"
-	rmqrpc "github.com/evrone/go-clean-template/pkg/rabbitmq/rmq_rpc"
+	"github.com/sesigl/go-project-ddd-template/pkg/logger"
+	rmqrpc "github.com/sesigl/go-project-ddd-template/pkg/rabbitmq/rmq_rpc"
 )
 
 const (

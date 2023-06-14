@@ -1,8 +1,8 @@
 package amqprpc
 
 import (
-	"github.com/evrone/go-clean-template/internal/application"
-	"github.com/evrone/go-clean-template/pkg/rabbitmq/rmq_rpc/server"
+	"github.com/sesigl/go-project-ddd-template/internal/application"
+	"github.com/sesigl/go-project-ddd-template/pkg/rabbitmq/rmq_rpc/server"
 	"sync"
 )
 

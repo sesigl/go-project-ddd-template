@@ -10,9 +10,9 @@
 package openapi
 
 import (
-	"github.com/evrone/go-clean-template/internal/application"
-	"github.com/evrone/go-clean-template/internal/domain/translation/entity"
-	"github.com/evrone/go-clean-template/pkg/logger"
+	"github.com/sesigl/go-project-ddd-template/internal/application"
+	"github.com/sesigl/go-project-ddd-template/internal/domain/translation/entity"
+	"github.com/sesigl/go-project-ddd-template/pkg/logger"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

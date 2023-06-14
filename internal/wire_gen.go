@@ -7,20 +7,20 @@
 package internal
 
 import (
-	"github.com/evrone/go-clean-template/config"
-	"github.com/evrone/go-clean-template/internal/application"
-	"github.com/evrone/go-clean-template/internal/domain/translation/entity"
-	"github.com/evrone/go-clean-template/internal/domain/translation/service"
-	"github.com/evrone/go-clean-template/internal/infrastructure/googleapi"
-	"github.com/evrone/go-clean-template/internal/infrastructure/repository"
-	"github.com/evrone/go-clean-template/internal/interfaces/amqp_rpc"
-	"github.com/evrone/go-clean-template/internal/interfaces/rest/v1/go"
-	"github.com/evrone/go-clean-template/pkg/httpserver"
-	"github.com/evrone/go-clean-template/pkg/logger"
-	"github.com/evrone/go-clean-template/pkg/postgres"
-	"github.com/evrone/go-clean-template/pkg/rabbitmq/rmq_rpc/server"
 	"github.com/gin-gonic/gin"
 	"github.com/google/wire"
+	"github.com/sesigl/go-project-ddd-template/config"
+	"github.com/sesigl/go-project-ddd-template/internal/application"
+	"github.com/sesigl/go-project-ddd-template/internal/domain/translation/entity"
+	"github.com/sesigl/go-project-ddd-template/internal/domain/translation/service"
+	"github.com/sesigl/go-project-ddd-template/internal/infrastructure/googleapi"
+	"github.com/sesigl/go-project-ddd-template/internal/infrastructure/repository"
+	"github.com/sesigl/go-project-ddd-template/internal/interfaces/amqp_rpc"
+	"github.com/sesigl/go-project-ddd-template/internal/interfaces/rest/v1/go"
+	"github.com/sesigl/go-project-ddd-template/pkg/httpserver"
+	"github.com/sesigl/go-project-ddd-template/pkg/logger"
+	"github.com/sesigl/go-project-ddd-template/pkg/postgres"
+	"github.com/sesigl/go-project-ddd-template/pkg/rabbitmq/rmq_rpc/server"
 )
 
 // Injectors from wire.go:

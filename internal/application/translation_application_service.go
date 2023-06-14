@@ -3,8 +3,8 @@ package application
 import (
 	"context"
 	"fmt"
-	"github.com/evrone/go-clean-template/internal/domain/translation/entity"
-	"github.com/evrone/go-clean-template/internal/domain/translation/service"
+	"github.com/sesigl/go-project-ddd-template/internal/domain/translation/entity"
+	"github.com/sesigl/go-project-ddd-template/internal/domain/translation/service"
 )
 
 // TranslationUseCase -.

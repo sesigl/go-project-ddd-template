@@ -2,7 +2,7 @@ package logger
 
 import (
 	"fmt"
-	"github.com/evrone/go-clean-template/config"
+	"github.com/sesigl/go-project-ddd-template/config"
 	"os"
 	"strings"
 

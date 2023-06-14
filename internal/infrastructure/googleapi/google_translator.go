@@ -5,7 +5,7 @@ import (
 
 	translator "github.com/Conight/go-googletrans"
 
-	"github.com/evrone/go-clean-template/internal/domain/translation/entity"
+	"github.com/sesigl/go-project-ddd-template/internal/domain/translation/entity"
 )
 
 // GoogleTranslator -.

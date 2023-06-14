@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/evrone/go-clean-template/internal"
-	"github.com/evrone/go-clean-template/pkg/httpserver"
-	"github.com/evrone/go-clean-template/pkg/logger"
-	"github.com/evrone/go-clean-template/pkg/rabbitmq/rmq_rpc/server"
+	"github.com/sesigl/go-project-ddd-template/internal"
+	"github.com/sesigl/go-project-ddd-template/pkg/httpserver"
+	"github.com/sesigl/go-project-ddd-template/pkg/logger"
+	"github.com/sesigl/go-project-ddd-template/pkg/rabbitmq/rmq_rpc/server"
 	"os"
 	"os/signal"
 	"syscall"

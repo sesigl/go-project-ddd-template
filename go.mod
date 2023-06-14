@@ -1,4 +1,4 @@
-module github.com/evrone/go-clean-template
+module github.com/sesigl/go-project-ddd-template
 
 go 1.19
 

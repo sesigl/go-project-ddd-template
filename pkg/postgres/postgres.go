@@ -4,7 +4,7 @@ package postgres
 import (
 	"context"
 	"fmt"
-	"github.com/evrone/go-clean-template/config"
+	"github.com/sesigl/go-project-ddd-template/config"
 	"log"
 	"sync"
 	"time"

@@ -2,9 +2,9 @@
 
 Domain Driven Design (DDD) Architecture template for Golang services
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/evrone/go-clean-template)](https://goreportcard.com/report/github.com/evrone/go-clean-template)
-[![License](https://img.shields.io/github/license/evrone/go-clean-template.svg)](https://github.com/evrone/go-clean-template/blob/master/LICENSE)
-[![Release](https://img.shields.io/github/v/release/evrone/go-clean-template.svg)](https://github.com/evrone/go-clean-template/releases/)
+[![Go Report Card](https://goreportcard.com/badge/github.com/sesigl/go-project-ddd-template)](https://goreportcard.com/report/github.com/sesigl/go-project-ddd-template)
+[![License](https://img.shields.io/github/license/evrone/go-clean-template.svg)](https://github.com/sesigl/go-project-ddd-template/blob/master/LICENSE)
+[![Release](https://img.shields.io/github/v/release/evrone/go-clean-template.svg)](https://github.com/sesigl/go-project-ddd-template/releases/)
 [![codecov](https://codecov.io/gh/sesigl/go-project-ddd-template/branch/master/graph/badge.svg?token=RLK70TCXU1)](https://codecov.io/gh/sesigl/go-project-ddd-template)
 
 ## Overview
@@ -526,7 +526,7 @@ similar to it. All are based on the principle of Dependency Inversion and separa
 
 - [https://github.com/bxcodec/go-clean-arch](https://github.com/bxcodec/go-clean-arch)
 - [https://github.com/zhashkevych/courses-backend](https://github.com/zhashkevych/courses-backend)
-- [https://github.com/evrone/go-clean-template](https://github.com/evrone/go-clean-template)
+- [https://github.com/sesigl/go-project-ddd-template](https://github.com/sesigl/go-project-ddd-template)
 
 ## Useful links
 

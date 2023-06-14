@@ -70,6 +70,7 @@ migrate-up: ### migration up
 
 setup-mac: ### setup mac os dependencies to run all tasks
 	brew install openapi-generator
+	brew install bazelisk
 .PHONY: setup-mac
 
 generate: generate-openapi-files generate-di-files ### Generate all files

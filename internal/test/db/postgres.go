@@ -3,9 +3,9 @@ package db
 import (
 	"context"
 	"fmt"
-	"github.com/evrone/go-clean-template/config"
-	"github.com/evrone/go-clean-template/pkg/logger"
 	"github.com/golang-migrate/migrate/v4"
+	"github.com/sesigl/go-project-ddd-template/config"
+	"github.com/sesigl/go-project-ddd-template/pkg/logger"
 	"github.com/testcontainers/testcontainers-go"
 	postgres2 "github.com/testcontainers/testcontainers-go/modules/postgres"
 	"github.com/testcontainers/testcontainers-go/wait"

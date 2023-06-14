@@ -2,12 +2,12 @@ package main_test
 
 import (
 	"context"
-	"github.com/evrone/go-clean-template/config"
-	"github.com/evrone/go-clean-template/internal"
-	"github.com/evrone/go-clean-template/internal/test/db"
-	"github.com/evrone/go-clean-template/pkg/logger"
-	"github.com/evrone/go-clean-template/pkg/rabbitmq/rmq_rpc/client"
 	"github.com/gin-gonic/gin"
+	"github.com/sesigl/go-project-ddd-template/config"
+	"github.com/sesigl/go-project-ddd-template/internal"
+	"github.com/sesigl/go-project-ddd-template/internal/test/db"
+	"github.com/sesigl/go-project-ddd-template/pkg/logger"
+	"github.com/sesigl/go-project-ddd-template/pkg/rabbitmq/rmq_rpc/client"
 	"github.com/stretchr/testify/require"
 	"io"
 	"net/http"
