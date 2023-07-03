@@ -140,14 +140,6 @@ the dependencies in your project at compile time, ensuring type-safety, reducing
 and enhancing code maintainability. It's an excellent choice for those striving for clean, robust,
 and efficient software design in the Go programming landscape.
 
-With an API-First approach, it may not always be feasible or necessary to set up dependency
-injection for every aspect of your application. Yet, Wire provides us the flexibility to selectively
-manage and instantiate dependencies as needed.
-
-Therefore, with the exception of the generated HTTP Server backend – considered an outer layer and
-therefore a unique case – we advocate using Wire to manage dependencies throughout the rest of your
-application.
-
 Furthermore, it's important to maintain an emphasis on encapsulation and boundary enforcement. In
 some cases, this might mean not exposing a factory method. After all, while dependency injection is
 a powerful tool, it's not a mandate. It should be used judiciously, and not everywhere and always.
@@ -189,6 +181,12 @@ software design principles.
 >Dependency Injection encourages you to think in terms of interfaces rather than concrete types.
 > This leads to a design that is more flexible, extensible, and adheres to the SOLID principles,
 > enhancing the overall software design quality.
+
+With an API-First approach, it may not always fit to set up dependency
+injection for every aspect of your application. Yet, Wire provides us the flexibility to selectively
+manage and instantiate dependencies as needed. In this example generated code is partially disabled,
+because the required factory methods and generic monitoring endpoints are located in `routers.go`
+Most certainly therer is a smart solution for it, that we didnt figure out yet.
 
 ## Project structure
 
